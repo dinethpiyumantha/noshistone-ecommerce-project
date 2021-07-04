@@ -9,13 +9,18 @@
       />
     </div>
     <h5 class="my-3" v-if="searchInput">Results for '{{ search }}'</h5>
-    <div class="col-12 my-2 py-1">
-        Result
+    <div class="col-12 my-2 py-1 d-flex justify-content-around flex-wrap">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
     </div>
   </div>
 </template>
 
 <script>
+import Card from './Card.vue';
+
 export default {
   data() {
     return {
@@ -27,6 +32,9 @@ export default {
       return this.search == "" ? false : true;
     },
   },
+  components: {
+    Card
+  }
 };
 </script>
 

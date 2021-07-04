@@ -13,7 +13,7 @@
         <img class="col-12" src="images/Slider/s1.jpg" alt="..." />
     </Slide>
     <Slide>
-        <img class="col-12" src="images/Slider/s1.jpg" alt="..." />
+        <img class="col-12" src="images/Slider/s2.jpg" alt="..." />
     </Slide>
     <Slide>
         <img class="col-12" src="images/Slider/s1.jpg" alt="..." />

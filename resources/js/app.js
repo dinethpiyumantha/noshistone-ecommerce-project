@@ -31,6 +31,11 @@ Vue.component('app', require('./App.vue').default);
  import VueCarousel from 'vue-carousel';
  Vue.use(VueCarousel);
 
+ import Antd from 'ant-design-vue';
+ Vue.use(Antd);
+
+ import 'ant-design-vue/dist/antd.css';
+
 const app = new Vue({
     el: '#app',
 });

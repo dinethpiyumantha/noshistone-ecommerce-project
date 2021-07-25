@@ -1,25 +1,33 @@
 <template>
   <div class="container my-3">
     <div class="col-12">
-      <input
+      <a-input-search
         v-model="search"
-        class="form-control"
-        type="text"
         placeholder="Search Footwares"
+        class="w-100 py-2"
+        @search="onSearch"
       />
     </div>
-    <h5 class="my-3" v-if="searchInput">Results for '{{ search }}'</h5>
-    <div class="col-12 my-2 py-1 d-flex justify-content-around flex-wrap">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+
+    <div class="row">
+      <div class="col-3 my-2">
+        <a-card title="Default size card"> </a-card>
+      </div>
+      <div class="col-9">
+        <h5 class="my-3" v-if="searchInput">Results for '{{ search }}'</h5>
+        <div class="col-12 my-2 py-1 d-flex justify-content-around flex-wrap">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Card from './Card.vue';
+import Card from "./Card.vue";
 
 export default {
   data() {
@@ -33,8 +41,9 @@ export default {
     },
   },
   components: {
-    Card
-  }
+    Card,
+  },
+  methods: {},
 };
 </script>
 
